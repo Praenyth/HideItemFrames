@@ -1,0 +1,30 @@
+{
+  "schemaVersion": 1,
+  "id": "hideitemframes",
+  "version": "${version}",
+  "name": "HideItemFrames",
+  "description": "",
+  "authors": [],
+  "contact": {
+    "repo": "https://github.com/prae/HideItemFrames"
+  },
+  "license": "unlicense",
+  "icon": "assets/hideitemframes/icon.png",
+  "environment": "client",
+  "entrypoints": {
+    "client": [
+      "lol.praenyth.mods.hideitemframes.client.HideItemFramesClient"
+    ],
+    "main": [
+      "lol.praenyth.mods.hideitemframes.HideItemFrames"
+    ]
+  },
+  "mixins": [
+    "hideitemframes.mixins.json"
+  ],
+  "depends": {
+    "fabricloader": ">=${loader_version}",
+    "fabric": "*",
+    "minecraft": "${minecraft_version}"
+  }
+}
